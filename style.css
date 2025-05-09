@@ -5,8 +5,10 @@
 }
 
 :root {
-    --botton-color: #004FCF;
     --text-botton: white;
+    --bg-color: #B4D0E6;
+    --btn-color: #0061FE;
+    --bg-footer-color: #000000;
 }
 
 
@@ -27,14 +29,14 @@ header {
         ul {
             list-style-type: none;
             display: flex;
-            padding: 10px;
+            padding: 15px 0;
             align-items: center;
 
 
             li {
                 padding-right: 1rem;
                 min-width: fit-content;
-                padding: 10px;
+                padding-left: 5px;
                 font-size: 12px;
 
                 img {
@@ -44,8 +46,8 @@ header {
 
 
 
-                .btn{
-                    background-color: var(--botton-color);
+                .btn {
+                    background-color: var(--btn-color);
                     color: var(--text-botton);
                     text-align: center;
                     padding: 5px;
@@ -55,7 +57,7 @@ header {
             }
 
             .cliccabile:hover {
-                border-bottom: 1px solid blue;
+                border-bottom: 1px solid var(--btn-color);
                 cursor: pointer;
             }
 
@@ -69,27 +71,46 @@ header {
     }
 
 
+}
 
-    .dx {
+footer {
+    background-color: var(--bg-footer-color);
+    color: grey;
+    padding: 20px 0;
+
+    .container-footer {
+        max-width: 60%;
+        margin: 0 auto;
         display: flex;
-        justify-content: center;
-    }
-
-
-
-    img {
-        width: 12rem;
-    }
-
-    .profile {
-        display: flex;
-        justify-content: end;
-    }
-
-    main section {
+        flex-direction: row;
+        justify-content: space-between;
         padding: 30px 0;
     }
 
-    #green {
-        background-color: green;
+    ul {
+        padding:10px 20px 0 0 ;
+        list-style: none;
     }
+    li{
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    language{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        max-width: 60%;
+        margin: 0 auto;
+        font-size: 8;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        font-size: small;
+        i{
+         padding:0 5px;
+        }
+    }
+    
+}
